@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./src/style.css?v=108">
+
+    <title>Intake form</title>
+  </head>
+  
+<header>
+    <h1>Homecell Induction Form</h1>
+</header>
+<body>
+  
+<div id="design_element">
+
+    <!--canvas for holding the 3D animated background elements-->
+  <canvas id="myCanvas"></canvas>
+</div>
+
+    <!-- canvas for the wave elements --> 
+    <canvas id="wave-canvas"></canvas>
+
+    <div id="box1">
+        <div id="box_element1">
+            <p>Welcome to the Homecell Induction form.</p>
+            <a href="./Homecell_induction/pages/Login_Page.php" target="_blank" title="For Leaders access information">Go to Leaders Login Page</a>
+            </p>
+        </div>
+        <div id="box_element2">
+            <p>Kindly fill the form below to complete your induction process.</p>
+        </div>
+        <div id="box_element3">
+            <p>Note: All fields are required.</p>
+            <form action="index.html" method="post">
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" placeholder="0123456789" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="Residence">Residence:</label>
+                    <input type="text" id="Residence" name="Residence" required>
+                    <br>
+                    <input type="radio" name="HasWhatsApp" value="doesHasWhatsApp">
+                    Has WhatsApp<br>
+                    <input type="radio" name="HasWhatsApp" value="doesNOTHasWhatsApp">
+                    Does not Have WhatsApp<br>
+                </div>
+                <br><br>
+                <div id="submit_button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+      </div>
+  <body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+
+  <footer>
+    <p>&copy; 2024 Homecell Induction. All rights reserved.</p>
+</footer>
+</html>
