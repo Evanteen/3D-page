@@ -63,7 +63,7 @@ export const SetUpCanvas = () => {
 
   backlight.position.set(-4, 6, -10);
 
-  sphere.position.set(0, 0, -1.55);
+  sphere.position.set(0, 0, -1.57);
 
   sphere.rotateX(120);
   sphere.rotateY(180);
