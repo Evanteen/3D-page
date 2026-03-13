@@ -10,12 +10,12 @@
     <title>Intake form</title>
   </head>
   
-<header>
-    <h1>Homecell Induction Form</h1>
-</header>
 <body>
-  
-<div id="design_element">
+  <header>
+    <h1>Homecell Induction Form</h1>
+  </header>
+
+  <div id="design_element">
 
     <!--canvas for holding the 3D animated background elements-->
   <canvas id="myCanvas"></canvas>
@@ -35,7 +35,7 @@
         </div>
         <div id="box_element3">
             <p>Note: All fields are required.</p>
-            <form action="index.html" method="post">
+            <form id="inducteeForm" action="" method="post">
                 <div>
                     <label for="firstname">First Name:</label>
                     <input type="text" id="firstname" name="firstname" required>
@@ -52,13 +52,10 @@
                 </div>
                 <br><br>
                 <div>
-                    <label for="Residence">Residence:</label>
-                    <input type="text" id="Residence" name="Residence" required>
+                    <label for="residence">Residence:</label>
+                    <input type="text" id="residence" name="residence" required>
                     <br>
-                    <input type="radio" name="HasWhatsApp" value="doesHasWhatsApp">
-                    Has WhatsApp<br>
-                    <input type="radio" name="HasWhatsApp" value="doesNOTHasWhatsApp">
-                    Does not Have WhatsApp<br>
+                    <label><input type="checkbox" id="hasWhatsApp" name="hasWhatsApp"> Has WhatsApp</label>
                 </div>
                 <br><br>
                 <div id="submit_button">
@@ -67,11 +64,10 @@
             </form>
         </div>
       </div>
-  <body>
     <script type="module" src="/src/main.js"></script>
-  </body>
-
+  
   <footer>
     <p>&copy; 2024 Homecell Induction. All rights reserved.</p>
-</footer>
+  </footer>
+</body>
 </html>
